@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>796</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page_giris">
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>160</y>
+          <width>400</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string>Diyetisyen Takip Sistemi</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="line_kullanici">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Kullanıcı Adı</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="line_sifre">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Şifre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_giris_yap">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string>Giriş Yap</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_kayit_ol_gecis">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string>kayıt ol</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_kayit">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>150</number>
+        </property>
+        <property name="topMargin">
+         <number>150</number>
+        </property>
+        <property name="rightMargin">
+         <number>150</number>
+        </property>
+        <property name="bottomMargin">
+         <number>150</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="7" column="0">
+            <widget class="QPushButton" name="btn_geri_don_giris">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Geri Dön</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>18</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Kayıt Ol</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="line_adsoyad">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Ad Soyad</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QPushButton" name="btn_kaydet_devam">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Devam Et</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QSpinBox" name="spin_yas">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="suffix">
+              <string/>
+             </property>
+             <property name="prefix">
+              <string>Yaş :  </string>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLineEdit" name="line_kayit_kullanici">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="placeholderText">
+              <string>Kullanıcı adı</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QDoubleSpinBox" name="spin_kilo">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="prefix">
+              <string>Kilo :  </string>
+             </property>
+             <property name="suffix">
+              <string>  kg</string>
+             </property>
+             <property name="minimum">
+              <double>10.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>200.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="line_kayit_sifre">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Şifre</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <property name="leftMargin">
+            <number>150</number>
+           </property>
+           <property name="topMargin">
+            <number>100</number>
+           </property>
+           <property name="rightMargin">
+            <number>150</number>
+           </property>
+           <property name="bottomMargin">
+            <number>150</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>18</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Hedefiniz Nedir?</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_kilo_al">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Kilo almak istiyorum.</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_kilo_ver">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Kilo vermek istiyorum.</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_form_koru">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Formumu korumak istiyorum.</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_geri_don_hedef">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(221, 221, 0);</string>
+             </property>
+             <property name="text">
+              <string>Geri dön</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_4">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">/* GRUP KUTULARI (Group Box) */
+QGroupBox {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}
+
+/* İLERLEME ÇUBUKLARI (Progress Bar) */
+QProgressBar {
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center; /* Yazıyı ortala (%50 gibi) */
+    background-color: #FFFFFF; /* Barın boş hali beyaz olsun */
+    color: black; /* Yüzde yazısı siyah */
+    font-weight: bold;
+}
+
+/* Barın Dolu Kısmı (Chunk) */
+QProgressBar::chunk {
+    background-color: #000000; /* SİYAH DOLUM */
+    width: 20px;
+}
+
+/* Sadece Kalori Barı Özel Olsun (İstersen) */
+/* ObjectName ile özel renk verebiliriz */
+#bar_kalori::chunk {
+    background-color: #FF4500; /* Kalori barı Turuncu dolsun mesela */
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>363</y>
+             <width>47</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>10</y>
+             <width>861</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 221, 0);</string>
+           </property>
+           <property name="text">
+            <string>Günlük İlerleme</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lbl_genel_durum">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>861</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(132, 66, 198);</string>
+           </property>
+           <property name="text">
+            <string>Vücut kitle endeksiniz :  </string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>100</y>
+             <width>421</width>
+             <height>601</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(246, 206, 255);</string>
+           </property>
+           <property name="title">
+            <string>Beslenme Hedefleri</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <widget class="QProgressBar" name="bar_kalori">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>60</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Günlük Kalori Hedefi:</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_yemek_ekle">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>90</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_yemek_ekle">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);</string>
+            </property>
+            <property name="text">
+             <string>Kalori Ekle</string>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_protein">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>210</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_karbon">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>330</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_yag">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>450</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>170</y>
+              <width>421</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(246, 206, 255);</string>
+            </property>
+            <property name="text">
+             <string>Makrolar:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>210</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Protein</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Karbonhidrat</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>450</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Yağ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_protein_ekle">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>260</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_karbon_ekle">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>390</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_yag_ekle">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>520</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_protein_ekle">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>260</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_karbon_ekle">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>390</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_yag_ekle">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>520</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>100</y>
+             <width>421</width>
+             <height>601</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(96, 88, 203);</string>
+           </property>
+           <property name="title">
+            <string> Egzersiz ve Aktivite Hedefleri</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <widget class="QProgressBar" name="bar_barfiks">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>100</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_sinav">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>210</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_mekik">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>320</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QProgressBar" name="bar_kosu">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>430</y>
+              <width>241</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="value">
+             <number>24</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Barfiks</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>210</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Şınav</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>320</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mekik</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>430</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Koşu</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_barfiks_ekle">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>150</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);
+background-color: rgb(38, 38, 115);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_sinav_ekle">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);
+background-color: rgb(38, 38, 115);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_mekik_ekle">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>370</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);
+background-color: rgb(38, 38, 115);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btn_kosu_ekle">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>480</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 54, 203);
+background-color: rgb(38, 38, 115);</string>
+            </property>
+            <property name="text">
+             <string>ekle</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_barfiks_ekle">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>150</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_sinav_ekle">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>260</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_mekik_ekle">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>370</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spin_kosu_ekle">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>480</y>
+              <width>210</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 0);
+background-color: rgb(118, 118, 118);</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>948</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
